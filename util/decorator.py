@@ -2,7 +2,7 @@ import time
 import datetime
 
 
-def timer(func):
+def timed(func):
     def _wrapper(*args, **kwargs):
         t1 = time.perf_counter()
         func(*args, **kwargs)
